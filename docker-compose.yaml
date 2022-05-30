@@ -6,3 +6,13 @@ services:
     build: reverse_proxy
     ports:
         - "80:80"
+
+  site1:
+    build: site1
+    expose:
+      - 80
+
+  site2:
+    build: site2
+    expose:
+      - 80
