@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+
+  reverse-proxy:
+    build: reverse_proxy
+    ports:
+        - "80:80"
