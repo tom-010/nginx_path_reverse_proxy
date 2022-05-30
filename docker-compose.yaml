@@ -3,7 +3,9 @@ version: "3.9"
 services:
 
   reverse-proxy:
-    build: reverse_proxy
+    image: nginx
+    volumes:
+      - ./reverse_proxy/conf.d:/etc/nginx/conf.d
     ports:
         - "80:80"
 
